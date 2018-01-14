@@ -1,0 +1,157 @@
+/* 
+Code couleurs utiliser : 
+#000000 = Noir
+#FFFFFF = Blanc
+#FF0000 = Rouge
+#00FF00 = Vert
+#0000FF = Bleu
+#FFFF00 = Jaune
+#DDDDDD = Gris clair
+ */
+
+*{
+	font-family: "Trebuchet MS", "Times New Roman" , Arial, Verdana, Helvetica, "Arial Black", "Comic Sans MS" , Georgia, "Courier New", Impact ;
+
+}
+
+body{
+	/*background: url("../img/adobe_flash_cs4_logo1.png") fixed no-repeat top right, url("../img/background.jpg") fixed no-repeat top ;*/
+	background-color: rgba(50, 50, 50, 0.9); /* Accepter depuis IE9 et + la dernière valeur est la transparence Alpha*/
+	color: #FFFFFF ; 
+/*background-image: url("../img/adobe_flash_cs4_logo1.png");
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position: top right;
+background-size: 119px 125px; */
+/* Les 5 lignes de background peuvent être défini par background et tout les paramètres :*/
+
+}
+
+h1{
+	text-align: center;
+	/*border: 3px blue inset ;*/
+}
+
+h1 + h2 {
+	color: #DDDDDD;
+}
+
+h3{
+	color: #FF0000 ;
+}
+
+h3 + h4 {
+	text-decoration: underline;
+}
+
+p{
+	text-align: justify;
+ 	border: 2px outset grey;
+/*border-right: 2px solid black;
+border-radius: 10px ; */
+box-shadow: 3px -3px 5px grey;
+text-shadow : 1px 1px 0px grey ;
+}
+
+a{
+	text-decoration: none ;
+	color: #0000FF ; 
+}
+a:hover{
+	color: rgb(255,0,0);
+	font-style: italic;
+}
+a:active{
+	color : rgb(0,255,0);
+}
+a:focus{
+	background-color: rgba(0,200,0,0.8);
+}
+a.visited{
+
+}
+ mark {
+	background-color: #FF0000;
+	color: #000000 ;
+}
+.signature{
+	text-align: right;
+}
+
+ 
+
+/* Start Logo Google */
+.GdeGoogle{
+	font-weight: bold;
+	color: #0039B6 ;
+	font-size: 2em;
+	font-family: "Time New Roman";
+}
+
+.O1EdeGoogle{
+	font-weight: bold;
+	color: #C41200;
+	font-size: 2em;
+	font-family: "Time New Roman";
+}
+
+.O2deGoogle{
+	font-weight: bold;
+	color: #F3C518;
+	font-size: 2em;
+	font-family: "Time New Roman";
+}
+
+.LdeGoogle{
+	font-weight: bold;
+	color: #30A72F ;
+	font-size: 2em;
+	font-family: "Time New Roman";
+}
+/* STOP Logo Google */
+
+/* Rappel le Float est la possibilité de mettre du texte autour d'une image comme sous word. */
+.screenfloat{
+	float: left;
+}
+
+.screenfloatstop{
+	clear: both;    
+}
+
+.shadow{
+
+}
+/* Note pour plus tard : */
+
+/* @font-face {
+	font-family: 'learning_curve_proregular';
+	src: url('LearningCurve_OT-webfont.eot');
+	src: url('LearningCurve_OT-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('LearningCurve_OT-webfont.woff') format('woff'),
+		 url('LearningCurve_OT-webfont.ttf') format('truetype'),
+		 url('LearningCurve_OT-webfont.svg#learning_curve_proregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+} */
+
+/* Ligne a mettre pour que le font-face s'applique.
+font-family: 'learning_curve_proregular', Arial, Impact, Verdana, sans-serif; */
+
+/*
+
+*{
+	Le * correspond à toute les balises html et class
+}
+
+h3 em
+{
+	Une balise contenu dans une autre, ici c'est em qui aura les propriétés s'il est inclu dans h3
+}
+
+h3 + p
+{
+	Une balise qui en suit une autre, donc cela s'applique sur tout les paragraphe qui sera précéder de h3
+}
+ */

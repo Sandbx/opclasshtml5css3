@@ -1,0 +1,55 @@
+/* CSS3 Version */
+
+*{
+	font-family: "Trebuchet MS", "Times New Roman" , Arial, Verdana, Helvetica, "Arial Black", "Comic Sans MS" , Georgia, "Courier New", Impact ;
+
+}
+body{
+	color: rgb(0,0,0);
+	background: rgba(221,221,221,0.8);
+	font-size: 0.9em ;
+}
+h1{ 
+	text-align: center; 
+
+}
+h1 + h2 {
+
+}
+h2{
+	border-bottom: 3px solid rgb(0,112,192);
+}
+h3{
+
+}
+h3 + h4 {
+
+}
+p{
+
+}
+a{
+	color: rgba(0,0,255,0.8);
+	font-weight: bold;
+	text-decoration: none;
+}
+table{
+	border: thin solid #000000;
+	width: 100%;
+	border-spacing: 0px;
+
+
+}
+td,tr,th{
+	border: thin solid #000000;
+width: 50%;
+}
+
+.civil{
+	text-align: left;
+	font-weight: bold;
+	font-size: 1em ;	
+}
+.datation{
+	border-left: 2px solid rgb(0,112,192);
+}

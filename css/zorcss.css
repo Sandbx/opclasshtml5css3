@@ -1,0 +1,275 @@
+/* CSS3 */
+/* Définition des polices personnalisées */
+
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('../policy/ballpark.eot');
+    src: url('../policy/ballpark.eot?#iefix') format('embedded-opentype'),
+    url('../policy/ballpark.woff') format('woff'),
+    url('../policy/ballpark.ttf') format('truetype'),
+    url('../policy/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face /* Charge la police à partir de la localisation du fichier css et non par rapport au fichier html */
+{
+    font-family: 'Dayrom';
+    src: url('../policy/dayrom.eot');
+    src: url('../policy/dayrom.eot?#iefix') format('embedded-opentype'),
+    url('../policy/dayrom.woff') format('woff'),
+    url('../policy/dayrom.ttf') format('truetype'),
+    url('../policy/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Elément principaux de la page*/
+body{
+	background: url('../img/tpzozor/fond_jaune.png');
+	font-family: 'Trebuchet MS', Arial, sans-serif ;
+	color: #212121 ;
+}
+
+#bloc_page{
+	width: 900px;
+	margin: auto ;
+}
+
+section h1, footer h1, nav a{
+	font-family: Dayrom, sans-serif ;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+/* HEADER */
+
+header{
+	background: url('../img/tpzozor/separateur.png') repeat-x bottom ;
+}
+
+#titre_principal{
+	display: inline-block;
+}
+
+header h1{
+	font-family: 'BallparkWeiner', sans-serif ;
+	font-weight:2.5em ;
+	font-size: normal;
+}
+
+#logo, h1{
+	display: inline-block;
+	margin-bottom: 0px ;
+}
+
+header h2{
+	font-family: Dayrom, sans-serif ;
+	font-style: 1.1em;
+	margin-top: 0px;
+	font-weight: normal;
+}
+
+/* MENU DE NAV */
+nav {
+    margin: 0;
+	width: 740px;
+	text-align: right;
+	display: inline-block;
+}
+
+nav ul{
+	/*La dfinition suivante permet d'enlever les puces sur une liste de puce*/
+	list-style-type: none; 
+
+}
+
+nav li{
+	display: inline-block; 	/*Avec le inline-block cela nous permet de mettre la liste de puce sur une ligne au lieu qu'elle soit sur plusieurs.*/
+	margin-right: 15px;
+}
+
+nav a {
+	font-size: 1.3em;
+	color: #212121 ;
+	padding-bottom: 3px ;
+	text-decoration: none;
+}
+nav a:hover{
+	color: #760001 ;
+	border-bottom: 3px solid #760001 ;
+}
+
+/* LA BANNIERE */
+
+#banniere_image{
+	background: url('../img/tpzozor/sanfrancisco.jpg');
+	margin-top: 15px;
+	margin-bottom: 25px;
+	height: 200px;
+	border-radius: 5px;
+	box-shadow: 0px 4px 4px #1C1A19;
+}
+
+#banniere_description
+{
+    position: absolute;
+    bottom: 0;
+    border-radius: 0px 0px 5px 5px;
+    width: 99.5%;
+    height: 33px;
+    padding-top: 15px;
+    padding-left: 4px;
+    background-color: rgb(24,24,24); /* Pour les anciens navigateurs */
+    background-color: rgba(24,24,24,0.8);
+    color: white;
+    font-size: 0.8em;
+}
+
+.bouton_rouge
+{
+    display: inline-block;
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background: url('../img/tpzozor/fond_degraderouge.png') repeat-x;
+    border: 1px solid #760001;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 3px 8px 0px 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.bouton_rouge img
+{
+    border: 0;
+}
+
+/* Corps */
+
+article, aside
+{
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+}
+
+article
+{
+    width: 625px;
+    margin-right: 15px;
+}
+
+.ico_categorie
+{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+article p
+{
+    font-size: 0.8em;
+}
+
+aside
+{
+    position: relative;
+    width: 235px;
+    background-color: #706b64;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+}
+
+#fleche_bulle
+{
+    position: absolute;
+    top: 100px;
+    left: -12px;
+}
+
+#photo_zozor
+{
+    text-align: center;
+}
+
+#photo_zozor img
+{
+    border: 1px solid #181818;
+}
+
+aside img
+{
+    margin-right: 5px;
+}
+
+/* Footer */
+
+footer
+{
+    background:  url('../img/tpzozor/ico_top.png') no-repeat top center, url('../img/tpzozor/separateur.png') repeat-x top, url('../img/tpzozor/ombre.png') repeat-x top;
+    padding-top: 25px;
+}
+
+footer p, footer ul
+{
+    font-size: 0.8em;
+}
+
+footer h1
+{
+    font-size: 1.1em;
+}
+
+#tweet, #mes_photos, #mes_amis
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#tweet
+{
+    width: 28%;
+}
+
+#mes_photos
+{
+    width: 35%;
+}
+
+#mes_amis
+{
+    width: 34%;
+}
+
+#mes_photos img
+{
+    border: 1px solid #181818;
+    margin-right: 2px;
+}
+
+#mes_amis ul
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+    width: 40%;
+    list-style-image: url('../img/tpzozor/ico_liensexterne.png');
+    padding-left: 2px;
+}
+
+#mes_amis a
+{
+    text-decoration: none;
+    color: #760001;
+}
+
+#mes_amis table{
+    width: 100%;
+}
